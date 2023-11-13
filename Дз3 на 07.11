@@ -11,5 +11,5 @@ b = int(input())
                       break
         if count == 4:
                       divisors.sort(reverse = True)
-                      print (‘’{num} имеет 4 делителя: {divisors}’’)
+                      print ("{num} имеет 4 делителя: {divisors}")
        
