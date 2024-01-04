@@ -1,0 +1,8 @@
+n = int(input("кол-во чисел: "))
+maxbinary = 0
+for i in range(n):
+    num = int(input("введите число: "))
+    binary = bin(num)[2:]
+    if len(binary) > len(bin(maxbinary)2:):
+        maxbinary = num
+print("число двоичное представление которого содержит максимальное количество разрядов:", maxbinary) 
