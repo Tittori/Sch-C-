@@ -1,0 +1,21 @@
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+
+n = int(input("Введите количество элементов в списке: "))
+arr = []
+
+for i in range(n):
+    while True:
+        num = input(f"Введите натуральное число для элемента {i+1}: ")
+        if num.isdigit():
+            arr.append(int(num))
+            break
+        else:
+            print("Ошибка, введите натуральное число")
+print("Исходный список:", arr)
+bubble_sort(arr)
+print("Отсортированный список:", arr)
