@@ -1,0 +1,9 @@
+def to_base_17(n):
+alphabet = "0123456789ABCDEFG"
+if n < 17:
+return alphabet[n]
+else:
+return to_base_17(n //  17) + alphabet[n % 17]
+number = int(input("Ваше натуральное число: "))
+result = to_base_17(number)
+print(f"Число {number} в 17-ой системе счисления: {result}")
