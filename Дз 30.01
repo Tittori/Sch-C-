@@ -1,0 +1,8 @@
+def sum_of_digits(*args):
+    result = []
+    for num in args:
+        sum_of_digits = 0
+        for digit in str(num):
+            sum_of_digits += int(digit)
+        result.append(sum_of_digits)
+    return result
