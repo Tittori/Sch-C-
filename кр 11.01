@@ -1,0 +1,6 @@
+def count_numbers(*args):
+    count = 0
+    for num in args:
+        if num % 4 == 0 and str(num)[-1] == '2':
+            count += 1
+    return count
